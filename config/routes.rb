@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'lists/index'
+
+  get 'lists/show'
+
+  get 'lists/new'
+
+  get 'items/index'
+
+  get 'items/show'
+
+  get 'items/new'
+
   get 'home/index'
 
   get 'users/new'
