@@ -1,0 +1,16 @@
+<h2>Bucket List</h2>
+<%= form_for :lists do |f| %>
+  <%= f.select :category, ['Family', 'Spouse', 'Me'] %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <%= f.label :in_progress %>
+  <%= f.check_box :in_progress %>
+
+  <%= f.submit %>
+<% end %>
+
+<!-- validations -->

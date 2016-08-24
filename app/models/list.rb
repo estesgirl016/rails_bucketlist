@@ -1,3 +1,4 @@
 class List < ApplicationRecord
-# has_many :items, dependant :destroy
+has_many :items, dependent: :destroy
 # belongs_to
+end
